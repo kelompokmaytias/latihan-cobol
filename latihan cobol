@@ -1,0 +1,26 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. MatematikaSimple.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  NUM1         PIC 9(4) VALUE 0.
+       01  NUM2         PIC 9(4) VALUE 0.
+       01  RESULT       PIC 9(4) VALUE 0.
+       01  RESULT-ADD   PIC 9(4) VALUE 0.
+       01  RESULT-SUB   PIC 9(4) VALUE 0.
+
+       PROCEDURE DIVISION.
+
+           DISPLAY 'Ketik angka pertama: '.
+           ACCEPT NUM1.
+
+           DISPLAY 'Ketik angka kedua: '.
+           ACCEPT NUM2.
+
+           ADD NUM1 TO NUM2 GIVING RESULT-ADD.
+           DISPLAY 'Hasilnya = s: ' RESULT-ADD.
+
+           SUBTRACT NUM2 FROM NUM1 GIVING RESULT-SUB.
+           DISPLAY 'Hasilnya adalah: ' RESULT-SUB.
+
+           STOP RUN.
